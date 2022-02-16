@@ -1,23 +1,35 @@
 import React from 'react'
+import styled from 'styled-components'
 
-function ProjectCard({project: {name, description, summary, technologies, github, site}}) {
+function ProjectCard({project: {name, description, technologies, github, site}}) {
 
     return (
-        <div>
+        <ProjectCardStyle>
             <h1>{name}</h1>
-            <h4>{description}</h4>
-            <p>{summary}</p>
+            <p>{description}</p>
             <ul>
                 <li><a href={github}>Github</a></li>
                 <li><a href={site}>Hosted Site</a></li>
             </ul>
             <div>
                 {technologies.map(tech => {
-                    return <span>#{tech}</span>
+                    return <span>{tech}, </span>
                 })}
             </div>
-        </div>
+        </ProjectCardStyle>
     )
 }
 
 export default ProjectCard
+
+const ProjectCardStyle = styled.div`
+
+    flex-basis: 20vw;
+    margin: 1em;
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+`

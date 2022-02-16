@@ -1,9 +1,16 @@
 import React from 'react'
+import styled from 'styled-components'
 
 function Home() {
     return (
-        <div>Home</div>
+        <HomeStyle id="home">Home</HomeStyle>
     )
 }
 
 export default Home
+
+const HomeStyle = styled.div`
+
+    height: 100vh;
+
+`
