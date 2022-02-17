@@ -32,4 +32,9 @@ const ProjectCardStyle = styled.div`
         padding: 0;
     }
 
+    @media screen and (max-width: 480px) {
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+
 `
