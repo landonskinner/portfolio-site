@@ -8,8 +8,8 @@ function ProjectCard({project: {name, description, technologies, github, site}})
             <h1>{name}</h1>
             <p>{description}</p>
             <ul>
-                <li><a href={github}>Github</a></li>
-                <li><a href={site}>Hosted Site</a></li>
+                <li><a href={github} target="_blank" rel="noreferrer">Github</a></li>
+                <li><a href={site} target="_blank" rel="noreferrer">Hosted Site</a></li>
             </ul>
             <div>
                 {technologies.map(tech => {
@@ -26,6 +26,7 @@ const ProjectCardStyle = styled.div`
 
     flex-basis: 20vw;
     margin: 1em;
+    /* background-color: rgba(255, 255, 255, .1); */
 
     ul {
         list-style: none;

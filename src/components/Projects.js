@@ -50,6 +50,8 @@ const ProjectsStyle = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+    /* background-image: linear-gradient(#7170D5, #AE46B4); */
 
     @media screen and (max-width: 480px) {
         display: block;

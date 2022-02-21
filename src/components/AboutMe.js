@@ -12,5 +12,6 @@ export default AboutMe
 const AboutMeStyle = styled.div`
 
     height: 100vh;
+    /* background-image: linear-gradient(#AE46B4, #cb359e); */
 
 `
