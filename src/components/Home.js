@@ -31,7 +31,7 @@ const HomeStyle = styled.div`
         
         font-family: 'Londrina Outline', cursive;
         color: white;
-        font-size: 4.25rem;
+        font-size: 7rem;
         position: relative;
         top: 30vh;
         padding-left: 0.15em;
@@ -47,12 +47,20 @@ const HomeStyle = styled.div`
     .name {
         display: block;
         font-family: 'Londrina Solid', cursive;
-        font-size: 6rem;
+        font-size: 12rem;
     }
 
     @media screen and (max-width: 480px) {
         .intro-container {
             width: 100%;
+        }
+
+        .intro {
+            font-size: 4.25rem;
+        }
+
+        .name {
+            font-size: 6rem;
         }
     }
     
