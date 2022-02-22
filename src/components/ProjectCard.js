@@ -41,7 +41,7 @@ const ProjectCardStyle = styled.div`
 
     /* background-color: rgba(255, 255, 255, .1); */
     h1 {
-        height: 2.5em;
+        height: auto;
         background: black;
         color: white;
         border-radius: 15px;

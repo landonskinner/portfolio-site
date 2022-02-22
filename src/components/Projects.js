@@ -56,10 +56,12 @@ const ProjectsStyle = styled.div`
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    padding-top: 5em;
     /* background-image: linear-gradient(#7170D5, #AE46B4); */
 
     @media screen and (max-width: 480px) {
         display: block;
+        padding-top: 2em;
     }
 
 `
