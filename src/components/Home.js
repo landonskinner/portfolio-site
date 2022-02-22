@@ -5,9 +5,11 @@ function Home() {
     return (
         <HomeStyle id="home">
             <div className="intro-container">
-            <div className="intro">
-                <span id="greeting">Hello! I am</span><span className="name">Landon Skinner</span><span className="role">Full Stack Developer</span>
-            </div>
+                <div className="intro">
+                    <span className="greeting">Hello! I am</span><span className="name">Landon Skinner</span><span className="role">Full Stack Developer</span>
+                    <div className="about"></div>
+                </div>
+                
             </div>
         </HomeStyle>
     )
@@ -38,7 +40,7 @@ const HomeStyle = styled.div`
         
     }
 
-    .intro > span {
+    span {
         text-align: left;
         display: block;
         line-height: 0.75em;
@@ -62,6 +64,14 @@ const HomeStyle = styled.div`
         .name {
             font-size: 6rem;
         }
+    }
+
+    .about {
+        color: white;
+        font-family: Arial !important;
+        font-size: 1.15rem;
+        text-align: left;
+        margin-top: 1em;
     }
     
     /* background-image: linear-gradient(#5089e1, #7170D5); */
